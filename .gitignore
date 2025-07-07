@@ -208,6 +208,8 @@ __marimo__/
 
 # Bỏ qua thư mục chứa dữ liệu
 data/
-
+med-mcqa-llama-3.2-3B-4bit-lora/
+unsloth_compiled_cache/
+unsloth-llama-trained/
 # Bỏ qua file chứa thông tin nhạy cảm
 .env
