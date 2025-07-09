@@ -1,2 +1,6 @@
 asyncio
 googletrans
+datasets
+transformers
+unsloth
+bitsandbytes
