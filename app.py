@@ -2,6 +2,8 @@ import gradio as gr
 import requests
 import datetime
 
+API_URL = "https://8839cf32b1e2.ngrok-free.app/chat"
+
 def get_timestamp():
     return datetime.datetime.now().strftime("%H:%M")
 
@@ -14,7 +16,7 @@ def call_model_api(question, choices_str):
     try:
         choices = [c.strip() for c in choices_str.split(",") if c.strip()]
         payload = {"question": question, "choices": choices}
-        response = requests.post("https://8839cf32b1e2.ngrok-free.app/chat", json=payload)
+        response = requests.post(API_URL, json=payload)
 
         if response.status_code == 200:
             result = response.json()
@@ -99,6 +101,7 @@ with gr.Blocks(
         color: #a0a0a0;
         text-align: center;
         margin-bottom: 24px;
+        margin-top: 24px;
     }
 
     #logo {
