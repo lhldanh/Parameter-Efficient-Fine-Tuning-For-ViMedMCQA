@@ -2,7 +2,7 @@ import gradio as gr
 import requests
 import datetime
 
-API_URL = "https://8839cf32b1e2.ngrok-free.app/chat"
+API_URL = "https://913240ee2ab2.ngrok-free.app/chat"
 
 def get_timestamp():
     return datetime.datetime.now().strftime("%H:%M")
