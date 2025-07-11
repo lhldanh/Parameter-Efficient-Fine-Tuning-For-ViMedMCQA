@@ -211,5 +211,7 @@ data/
 med-mcqa-llama-3.2-3B-4bit-lora/
 unsloth_compiled_cache/
 unsloth-llama-trained/
+med-mcqa-llama-3.2-1B-4bit-lora/
+llamaenv/
 # Bỏ qua file chứa thông tin nhạy cảm
 .env
